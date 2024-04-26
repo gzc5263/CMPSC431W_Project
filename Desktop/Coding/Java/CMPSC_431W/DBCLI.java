@@ -11,6 +11,7 @@ public class DBCLI {
     public static void main(String[] args) {
         try {
             while (dbFunctions.isConnected()) {
+                System.out.println("");
                 displayMenu();
                 int option = scanner.nextInt();
                 scanner.nextLine(); // Consume newline

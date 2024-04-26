@@ -1,0 +1,3 @@
+2023-10-09T23:39:21.598Z ERROR Failed to load http://127.0.0.1:45839: Error: ERR_CONNECTION_REFUSED (-102) loading 'http://127.0.0.1:45839/'
+2023-10-09T23:39:25.293Z ERROR Main window closed unexpectedly
+2023-10-09T23:39:25.386Z ERROR Main window closed unexpectedly

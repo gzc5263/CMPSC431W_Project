@@ -248,19 +248,21 @@ public class DBFunctions {
         }
         public void grouping() {
             try {
-                String query = "SELECT l.location_name, COUNT(*) AS num_works " +
+                String query = "SELECT c.title, l.location_name " +
                                "FROM public.\"Content\" c " +
                                "JOIN public.\"Filmed_At\" f ON c.title = f.film_title " +
                                "JOIN public.\"Location\" l ON f.film_location = l.location_name " +
-                               "GROUP BY l.location_name";
+                               "GROUP BY l.location_name, c.title " +
+                               "ORDER BY l.location_name, c.title";
         
                 PreparedStatement statement = connection.prepareStatement(query);
                 ResultSet resultSet = statement.executeQuery();
         
                 while (resultSet.next()) {
                     String country = resultSet.getString("location_name");
-                    int numWorks = resultSet.getInt("num_works");
-                    System.out.println("Country: " + country + ", Number of Works: " + numWorks);
+                    String title = resultSet.getString("title");
+            
+                    System.out.println("Country: " + country + ", Title: " + title);
                 }
             } catch (SQLException e) {
                 System.err.println("Error: " + e.getMessage());

@@ -1,0 +1,325 @@
+2024-04-24 15:56:55,821: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2024-04-24 15:58:34,383: ERROR	pgadmin:	401 Unauthorized: The server could not verify that you are authorized to access the URL requested. You either supplied the wrong credentials (e.g. a bad password), or your browser doesn't understand how to supply the credentials required.
+Traceback (most recent call last):
+  File "/Library/PostgreSQL/16/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/PostgreSQL/16/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/PostgreSQL/16/pgAdmin 4.app/Contents/Resources/web/pgadmin/__init__.py", line 799, in before_request
+    abort(401)
+  File "/Library/PostgreSQL/16/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/flask/helpers.py", line 277, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "/Library/PostgreSQL/16/pgAdmin 4.app/Contents/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/werkzeug/exceptions.py", line 861, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.Unauthorized: 401 Unauthorized: The server could not verify that you are authorized to access the URL requested. You either supplied the wrong credentials (e.g. a bad password), or your browser doesn't understand how to supply the credentials required.
+2024-04-24 15:59:48,668: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:3070354(Query-id: 9075864):
+Error Message:ERROR:  syntax error at or near "\"
+LINE 1: \conn info
+        ^ 
+
+SQL state: 42601
+Character: 1
+2024-04-24 17:56:27,178: ERROR	pgadmin:	'TableCommand' object has no attribute 'conn_id_ac'
+2024-04-24 19:58:43,168: ERROR	pgadmin:	Failed to execute query (execute_scalar) for the server #1 - DB:Netflix (Query-id: 1399278):
+Error Message:constraint Filmed_At_Location_fkey on table "Filmed_At" depends on table "Location"cannot drop table "Location" because other objects depend on it
+2024-04-24 19:58:52,327: ERROR	pgadmin:	Failed to execute query (execute_scalar) for the server #1 - DB:Netflix (Query-id: 5429310):
+Error Message:constraint Directed_By_Director_fkey on table "Directed_By" depends on table "Director"cannot drop table "Director" because other objects depend on it
+2024-04-24 20:57:13,142: WARNING	pgadmin:	Connection to database server (#1) for the connection - 'CONN:2741284' has been lost.
+2024-04-24 20:57:13,143: ERROR	pgadmin:	Connection (id #2741284) lost for the server (#1) on database (Netflix)
+2024-04-24 20:57:15,148: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:2741284(Query-id: 6022619):
+Error Message:ERROR:  relation "content" does not exist
+LINE 1: SELECT * FROM Content
+                      ^ 
+
+SQL state: 42P01
+Character: 15
+2024-04-24 20:57:22,844: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:2741284(Query-id: 9952505):
+Error Message:ERROR:  relation "content" does not exist
+LINE 1: SELECT * FROM Content
+                      ^ 
+
+SQL state: 42P01
+Character: 15
+2024-04-24 20:57:31,245: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:2741284(Query-id: 8394307):
+Error Message:ERROR:  relation "public.content" does not exist
+LINE 1: SELECT * FROM public.Content
+                      ^ 
+
+SQL state: 42P01
+Character: 15
+2024-04-24 20:57:54,256: WARNING	pgadmin:	Connection to database server (#1) for the connection - 'CONN:3070354' has been lost.
+2024-04-24 20:57:54,257: ERROR	pgadmin:	Connection (id #3070354) lost for the server (#1) on database (Netflix)
+2024-04-24 20:57:59,663: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:3070354(Query-id: 5438310):
+Error Message:ERROR:  relation "content" does not exist
+LINE 1: select * from Content
+                      ^ 
+
+SQL state: 42P01
+Character: 15
+2024-04-24 20:58:04,946: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:3070354(Query-id: 5325958):
+Error Message:ERROR:  relation "content" does not exist
+LINE 1: select * from Content
+                      ^ 
+
+SQL state: 42P01
+Character: 15
+2024-04-24 20:59:06,961: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:3070354(Query-id: 6223004):
+Error Message:ERROR:  relation "public.content" does not exist
+LINE 1: select * from public.Content
+                      ^ 
+
+SQL state: 42P01
+Character: 15
+2024-04-24 23:18:34,758: WARNING	pgadmin:	Connection to database server (#1) for the connection - 'CONN:6479696' has been lost.
+2024-04-24 23:18:34,759: ERROR	pgadmin:	Connection (id #6479696) lost for the server (#1) on database (Netflix)
+2024-04-24 23:18:36,660: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 6593491):
+Error Message:ERROR:  syntax error at or near ""LIMIT 1""
+LINE 7:                                          "LIMIT 1"
+                                                 ^ 
+
+SQL state: 42601
+Character: 329
+2024-04-24 23:18:41,884: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 870414):
+Error Message:ERROR:  relation "filmedat" does not exist
+LINE 3:                                          FROM FilmedAt
+                                                      ^ 
+
+SQL state: 42P01
+Character: 89
+2024-04-24 23:18:51,290: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 8244340):
+Error Message:ERROR:  relation "filmed_at" does not exist
+LINE 3:                                          FROM Filmed_At
+                                                      ^ 
+
+SQL state: 42P01
+Character: 89
+2024-04-24 23:19:01,109: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 7267298):
+Error Message:ERROR:  column "country" does not exist
+LINE 2: SELECT country, COUNT(*) AS movie_count 
+               ^ 
+
+SQL state: 42703
+Character: 9
+2024-04-24 23:19:26,170: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 2083356):
+Error Message:ERROR:  column "location_name" does not exist
+LINE 2: SELECT location_name, COUNT(*) AS movie_count 
+               ^ 
+
+SQL state: 42703
+Character: 9
+2024-04-24 23:20:24,401: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 964439):
+Error Message:ERROR:  column "location_name" does not exist
+LINE 2: SELECT location_name, COUNT(*) AS movie_count 
+               ^ 
+
+SQL state: 42703
+Character: 9
+2024-04-24 23:20:52,732: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 5557515):
+Error Message:ERROR:  column "location" does not exist
+LINE 2: SELECT Location, COUNT(*) AS movie_count 
+               ^
+HINT:  Perhaps you meant to reference the column "Filmed_At.Location". 
+
+SQL state: 42703
+Character: 9
+2024-04-24 23:21:13,833: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 2363):
+Error Message:ERROR:  column "Filmed_At.Location" does not exist
+LINE 2: SELECT "Filmed_At.Location", COUNT(*) AS movie_count 
+               ^ 
+
+SQL state: 42703
+Character: 9
+2024-04-24 23:21:25,894: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 8425354):
+Error Message:ERROR:  column "location" does not exist
+LINE 4:  WHERE Location IS NOT NULL 
+               ^
+HINT:  Perhaps you meant to reference the column "Filmed_At.Location". 
+
+SQL state: 42703
+Character: 78
+2024-04-24 23:21:36,916: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 3745252):
+Error Message:ERROR:  missing FROM-clause entry for table "filmed_at"
+LINE 2: SELECT Filmed_At.Location, COUNT(*) AS movie_count 
+               ^ 
+
+SQL state: 42P01
+Character: 9
+2024-04-24 23:21:45,283: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 3001203):
+Error Message:ERROR:  column "Filmed_At.Location" does not exist
+LINE 2: SELECT "Filmed_At.Location", COUNT(*) AS movie_count 
+               ^ 
+
+SQL state: 42703
+Character: 9
+2024-04-24 23:21:54,038: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 6209374):
+Error Message:ERROR:  missing FROM-clause entry for table "public"
+LINE 2: SELECT public."Filmed_At.Location", COUNT(*) AS movie_count 
+               ^ 
+
+SQL state: 42P01
+Character: 9
+2024-04-24 23:22:31,349: ERROR	pgadmin:	Failed to execute query (execute_scalar) for the server #1 - DB:Netflix (Query-id: 4274901):
+Error Message:column "film_location" of relation "Filmed_At" already exists
+2024-04-24 23:23:47,774: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 6258715):
+Error Message:ERROR:  column "location" does not exist
+LINE 4:  WHERE Location IS NOT NULL 
+               ^ 
+
+SQL state: 42703
+Character: 81
+2024-04-24 23:41:34,359: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 7237092):
+Error Message:ERROR:  relation "castedwith" does not exist
+LINE 1: SELECT cast_mem FROM CastedWith WHERE title = "Lucifer";
+                             ^ 
+
+SQL state: 42P01
+Character: 22
+2024-04-24 23:41:41,311: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 4165175):
+Error Message:ERROR:  relation "casted_with" does not exist
+LINE 1: SELECT cast_mem FROM Casted_With WHERE title = "Lucifer";
+                             ^ 
+
+SQL state: 42P01
+Character: 22
+2024-04-24 23:41:54,325: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 2946898):
+Error Message:ERROR:  column "title" does not exist
+LINE 1: SELECT cast_mem FROM public."Casted_With" WHERE title = "Luc...
+                                                        ^ 
+
+SQL state: 42703
+Character: 49
+2024-04-24 23:42:28,412: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 262822):
+Error Message:ERROR:  column "Lucifer" does not exist
+LINE 1: ...t_mem FROM public."Casted_With" WHERE casted_in = "Lucifer";
+                                                             ^ 
+
+SQL state: 42703
+Character: 61
+2024-04-24 23:42:34,027: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 8156192):
+Error Message:ERROR:  column "lucifer" does not exist
+LINE 1: ...ast_mem FROM public."Casted_With" WHERE casted_in = Lucifer;
+                                                               ^ 
+
+SQL state: 42703
+Character: 61
+2024-04-24 23:42:41,118: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 1762748):
+Error Message:ERROR:  column "lucifer" does not exist
+LINE 1: ...st_mem FROM public."Casted_With" WHERE casted_in == Lucifer;
+                                                               ^ 
+
+SQL state: 42703
+Character: 62
+2024-04-24 23:42:52,848: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 6431624):
+Error Message:ERROR:  column "lucifer" does not exist
+LINE 1: ...ast_mem FROM public."Casted_With" WHERE casted_in = Lucifer;
+                                                               ^ 
+
+SQL state: 42703
+Character: 61
+2024-04-24 23:44:57,346: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 2653127):
+Error Message:ERROR:  missing FROM-clause entry for table "public"
+LINE 1: SELECT cast_mem FROM public."Casted_With" WHERE public."Cast...
+                                                        ^ 
+
+SQL state: 42P01
+Character: 49
+2024-04-25 00:16:29,234: WARNING	pgadmin:	Connection to database server (#1) for the connection - 'CONN:6479696' has been lost.
+2024-04-25 00:16:29,235: ERROR	pgadmin:	Connection (id #6479696) lost for the server (#1) on database (Netflix)
+2024-04-25 00:16:30,686: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 9138404):
+Error Message:ERROR:  column "lucifer" does not exist
+LINE 1: ...ast_mem FROM public."Casted_With" WHERE casted_in = Lucifer;
+                                                               ^ 
+
+SQL state: 42703
+Character: 61
+2024-04-25 00:16:31,551: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 2055138):
+Error Message:ERROR:  column "lucifer" does not exist
+LINE 1: ...ast_mem FROM public."Casted_With" WHERE casted_in = Lucifer;
+                                                               ^ 
+
+SQL state: 42703
+Character: 61
+2024-04-25 00:17:08,989: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 9764127):
+Error Message:ERROR:  column "lucifer" does not exist
+LINE 1: ...ast_mem FROM public."Casted_With" WHERE casted_in = Lucifer;
+                                                               ^ 
+
+SQL state: 42703
+Character: 61
+2024-04-25 00:17:50,356: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 7178756):
+Error Message:ERROR:  column "lucifer" does not exist
+LINE 1: ...cast_mem FROM public."Casted_With" WHERE casted_in =Lucifer;
+                                                               ^ 
+
+SQL state: 42703
+Character: 60
+2024-04-25 00:17:58,182: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6479696(Query-id: 8527815):
+Error Message:ERROR:  column "lucifer" does not exist
+LINE 3: WHERE casted_in = Lucifer;
+                          ^ 
+
+SQL state: 42703
+Character: 63
+2024-04-25 00:18:34,587: ERROR	pgadmin:	Failed to execute query (execute_scalar) for the server #1 - DB:Netflix (Query-id: 9762300):
+Error Message:column "lucifer" does not exist
+LINE 1: ...SELECT * FROM public."Casted_With" WHERE casted_in = Lucifer
+                                                                ^
+2024-04-25 00:18:38,973: ERROR	pgadmin:	Failed to execute query (execute_scalar) for the server #1 - DB:Netflix (Query-id: 9425594):
+Error Message:column "Lucifer" does not exist
+LINE 1: ...LECT * FROM public."Casted_With" WHERE casted_in = "Lucifer"
+                                                              ^
+2024-04-25 08:28:18,488: ERROR	pgadmin:	Failed to execute query (execute_scalar) for the server #1 - DB:Netflix (Query-id: 3305561):
+Error Message:missing FROM-clause entry for table "castedwith"
+LINE 1: ... EXPLAIN SELECT * FROM public."Casted_With" WHERE CastedWith...
+                                                             ^
+2024-04-25 08:28:23,668: ERROR	pgadmin:	Failed to execute query (execute_scalar) for the server #1 - DB:Netflix (Query-id: 3225861):
+Error Message:syntax error at or near "From"
+LINE 1: ... EXPLAIN SELECT * FROM public."Casted_With" WHERE From Caste...
+                                                             ^
+2024-04-25 08:28:50,928: ERROR	pgadmin:	Failed to execute query (execute_scalar) for the server #1 - DB:Netflix (Query-id: 1946340):
+Error Message:syntax error at or near "Select"
+LINE 1: ... EXPLAIN SELECT * FROM public."Casted_With" WHERE Select * F...
+                                                             ^
+2024-04-25 08:29:30,785: WARNING	pgadmin:	Connection to database server (#1) for the connection - 'CONN:3266306' has been lost.
+2024-04-25 08:29:30,785: ERROR	pgadmin:	Connection (id #3266306) lost for the server (#1) on database (Netflix)
+2024-04-25 08:29:32,372: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:3266306(Query-id: 9762838):
+Error Message:ERROR:  column "lucifer" does not exist
+LINE 1: Select * From public."Casted_With" WHERE casted_in = Lucifer
+                                                             ^ 
+
+SQL state: 42703
+Character: 54
+2024-04-25 08:29:37,430: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:3266306(Query-id: 662980):
+Error Message:ERROR:  column "lucifer" does not exist
+LINE 1: ...elect * From public."Casted_With" WHERE casted_in = Lucifer;
+                                                               ^ 
+
+SQL state: 42703
+Character: 54
+2024-04-25 14:14:36,395: WARNING	pgadmin:	Connection to database server (#1) for the connection - 'CONN:3266306' has been lost.
+2024-04-25 14:14:36,396: ERROR	pgadmin:	Connection (id #3266306) lost for the server (#1) on database (Netflix)
+2024-04-25 14:14:38,034: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:3266306(Query-id: 9468294):
+Error Message:ERROR:  column "lucifer" does not exist
+LINE 1: Select * From public."Casted_With" WHERE casted_in = Lucifer
+                                                             ^ 
+
+SQL state: 42703
+Character: 54
+2024-04-25 14:14:40,101: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:3266306(Query-id: 1470408):
+Error Message:ERROR:  column "lucifer" does not exist
+LINE 1: Select * From public."Casted_With" WHERE casted_in = Lucifer
+                                                             ^ 
+
+SQL state: 42703
+Character: 54
+2024-04-25 15:02:10,404: WARNING	pgadmin:	Connection to database server (#1) for the connection - 'CONN:3266306' has been lost.
+2024-04-25 15:02:10,404: ERROR	pgadmin:	Connection (id #3266306) lost for the server (#1) on database (Netflix)
+2024-04-25 15:02:12,077: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:3266306(Query-id: 6378048):
+Error Message:ERROR:  relation "content" does not exist
+LINE 1: SELECT COUNT(*) AS title_count FROM Content
+                                            ^ 
+
+SQL state: 42P01
+Character: 37

@@ -1,0 +1,201 @@
+1680269508494:install.packages("DescTools")
+1680269521454:library(DescTools)
+1680279977408:library(readr)
+1680279977416:Dosage <- read_csv("Desktop/Stat 319/Dosage.csv")
+1680279977683:View(Dosage)
+1680280045960:Dosage <- read.csv("~/Desktop/Stat 319/Dosage.csv")
+1680280045961:View(Dosage)
+1680280111955:setwd("~/Desktop/Stat 319")
+1680280802052:Dosage <- read.csv("~/Desktop/Stat 319/Dosage.csv")
+1680280802054:View(Dosage)
+1680280949500:Dosage <- read.csv("~/Desktop/Stat 319/Dosage.csv")
+1680280949501:View(Dosage)
+1680281488088:PracData = read.csv("Dosage.csv", header = TRUE)
+1680281502846:setwd("~/Desktop/Stat 319")
+1680281506562:PracData = read.csv("Dosage.csv", header = TRUE)
+1680281514219:View(Dosage)
+1680281520949:View(Dosage)
+1680281522509:View(Dosage)
+1680282157110:summary(PracData$use_num)
+1680282172280:table(PracData$use_txt)
+1680282175749:table(PracData$use_txt)
+1680282241980:VarTest(PracData$tensile1, PracData$tensile2, alternative = "greater",
+1680282241981:conf.level = 0.90, ratio = 1)
+1680282245206:VarTest(PracData$tensile1, PracData$tensile2, alternative = "greater",
+1680282245206:conf.level = 0.90, ratio = 1)
+1680282895291:VarTest(PracData$tensile1, PracData$tensile2, alternative = "greater",conf.level = 0.90, ratio = 1)
+1680283025757:VarTest(PracData$drug1, PracData$drug2,PracData$drug3, alternative = "equal",conf.level = 0.90, ratio = 1)
+1680283254526:View(Dosage)
+1680283554707:PracData = read.csv("Dosage.csv", header = TRUE)
+1680283557755:summary(PracData$use_num)
+1680283723969:summary(PracData$drug)
+1680283768663:summary(PracData$BPchange)
+1680283995698:summary(PracData$drug)
+1680284008719:summary(PracData$BPchange)
+1680284305184:qqnorm(PracData$BPchange, pch = 1, frame = FALSE)
+1680284640688:View(Dosage)
+1680284641646:View(Dosage)
+1680284660170:View(Dosage)
+1680284660685:View(Dosage)
+1680284660848:View(Dosage)
+1680284700606:PracData = read.csv("Dosage.csv", header = TRUE)
+1680284734156:PracData = read.csv("Dosage.csv", header = TRUE)
+1680284765784:rm()Dosage
+1680284789390:rm(Dosage)
+1680284795466:summary(PracData$BPchange)
+1680284925690:t.test(PracData$BPchange, mu=0, conf.level= 0.95, alternative = "equal")
+1680284932948:t.test(PracData$BPchange, mu=0, conf.level= 0.95, alternative = "two.sided")
+1680284967930:VarTest(PracData$variance, alternative = "less", conf.level = 0.90,
+1680284967931:sigma.squared = 1)
+1680284975855:VarTest(PracData$BPchange, alternative = "less", conf.level = 0.90,
+1680284975856:sigma.squared = 1)
+1680284990973:VarTest(PracData$BPchange, alternative = "two.sided", conf.level = 0.90,
+1680284990974:sigma.squared = 1)
+1680285039928:library(DescTools)
+1680285046104:VarTest(PracData$BPchange, alternative = "two.sided", conf.level = 0.90,
+1680285046105:sigma.squared = 1)
+1680285261340:table(PracData$BPchange)
+1680286614393:VarTest(PracData$one,PracData$two,PracData$three, alternative = "two.sided", conf.level = 0.90,
+1680286614394:sigma.squared = 1)
+1680286622971:VarTest(PracData$one,PracData$two,PracData$three, alternative = "two.sided", conf.level = 0.90,
+1680286622971:sigma.squared = 1)
+1680286814571:PracData <= read.csv("Dosage.csv", header = TRUE)
+1680286820954:PracData = read.csv("Dosage.csv", header = TRUE)
+1680286824226:summary(PracData$BPchange)
+1680286870562:PracData = read.csv("Dosage.csv", header = TRUE, sep = ",")
+1680286874518:summary(PracData$BPchange)
+1680286878810:summary(PracData$BPchange)
+1680286881352:table(PracData$BPchange)
+1680287621834:VarTest(PracData$one,PracData$BPchange alternative = "two.sided", conf.level = 0.90,
+1680287629858:VarTest(PracData$drug,PracData$BPchange alternative = "two.sided", conf.level = 0.90,
+1680287638513:VarTest(PracData$drug,PracData$BPchange, alternative = "two.sided", conf.level = 0.90,
+1680287638513:sigma.squared = 1)
+1680287811185:model = aov(drug ~ section, data = grades) # response ~ factor
+1680287825502:Dosage = read.csv("Dosage.cvs", header = TRUE)
+1680287834922:Dosage = read.csv("Dosage.csv", header = TRUE)
+1680287837334:model = aov(drug ~ section, data = BPchange) # response ~ factor
+1680287841959:model = aov(drug ~ section, data = BPchange) # response ~ factor
+1680287853487:model = aov(drug ~ section, data = BPchange) # response ~ factor
+1680287931487:model = aov(BPchange ~ drug, data = BPchange) # response ~ factor
+1680287942436:model = aov(BPchange ~ drug, data = BPchange) # response ~ factor
+1680288086519:rm(PracData)
+1680288095996:model = aov(BPchange ~ drug, data = BPchanges) # response ~ factor
+1680288118356:anova(model)
+1680288120451:model = aov(BPchange ~ drug, data = Dosage) # response ~ factor
+1680288124178:anova(model)
+1680288254478:TukeyHSD(model, conf.level = 0.95) # 0.95 default. Change if alpha not 0.05
+1680288257551:anova(model)
+1680288277463:model = aov(BPchange ~ drug, data = Dosage) # response ~ factor
+1680288279956:anova(model)
+1680289350937:TukeyHSD(model, conf.level = 0.95) # 0.95 default. Change if alpha not 0.05
+1680289415875:model = aov(BPchange ~ drug, data = Dosage) # response ~ factor
+1680289418382:anova(model)
+1680289420078:TukeyHSD(model, conf.level = 0.95) # 0.95 default. Change if alpha not 0.05
+1681155595746:setwd("~/Desktop/Stat 319")
+1681486220631:HeartRate = read.csv("HeartRateOxyCons.csv", header = TRUE)
+1681486244441:setwd("~/Desktop/Stat 319")
+1681486248615:HeartRate = read.csv("HeartRateOxyCons.csv", header = TRUE)
+1681486257549:library(DescTools)
+1681486261505:HeartRate = read.csv("HeartRateOxyCons.csv", header = TRUE)
+1681486364927:HeartRate = read.csv("HeartRateOxygCons.csv", header = TRUE)
+1681486463945:rate <- lm(Ox~HR)
+1681486473862:rate <- lm(Ox ~ HR)
+1681486628560:LinearHeartRate<- lm(Ox ~ HR, data= HeartRate)
+1681486901298:LinearHeartRate<- lm(Ox ~ HR, data= HeartRate)
+1681486932248:cor(HeartRate$Ox,HeartRate$HR)
+1681486935013:cor.test(HeartRate$Ox,HeartRate$HR)
+1681487269783:cor(HeartRate$Ox,HeartRate$HR)
+1681487272704:cor.test(HeartRate$Ox,HeartRate$HR)
+1681487493744:qqnorm(LinearHeartRate$residuals)
+1681487496167:qqline(LinearHeartRate$residuals)
+1681487631206:qqnorm(LinearHeartRate$residuals)
+1681487634839:qqline(LinearHeartRate$residuals)
+1681487826011:shapiro.test(LinearHeartRate$residuals)
+1681487920591:shapiro.test(HeartRate$residuals)
+1681489005814:plot(HeartRate$x, LinearHeartRate$residuals)
+1681489013743:plot(HeartRate$HR, LinearHeartRate$residuals)
+1681489017565:abline(h=0)
+1681489022224:source("~/Desktop/Stat 319/Heart.R")
+1681490560042:HeartRate = read.csv("HeartRateOxygCons.csv", header = TRUE)
+1681490579054:anova(LinearHeartRate)
+1681491859221:summary(LinearHeartRate)
+1681492137522:summary(LinearHeartRate)
+1681492140651:anova(LinearHeartRate)
+1681498405496:anova(LinearHeartRate)
+1681500036098:summary(LinearHeartRate)
+1681500673220:confint(obj2, level=0.95)
+1681500680256:confint(LinearHeartRate, level=0.95)
+1681500793281:summary(LinearHeartRate)
+1681501023067:HeartRate = read.csv("HeartRateOxygCons.csv", header = TRUE)
+1681501023621:LinearHeartRate<- lm(Ox ~ HR, data= HeartRate)
+1681501025118:anova(LinearHeartRate)
+1681501025872:summary(LinearHeartRate)
+1681501037454:LinearHeartRate<- lm(Ox ~ HR, data= HeartRate)
+1681501039628:summary(LinearHeartRate)
+1681501165068:summary(LinearHeartRate)
+1681501174577:confint(LinearHeartRate, level=0.95)
+1681501234333:LinearHeartRate<- lm(Ox ~ HR, data= HeartRate)
+1681501239990:summary(LinearHeartRate)
+1681501259735:summary(LinearHeartRate)
+1681501260311:LinearHeartRate
+1681501350727:anova(LinearHeartRate)
+1681501364409:summary(LinearHeartRate)
+1681501912864:confint(LinearHeartRate, .95)
+1681501929993:confint(LinearHeartRate,level = .95)
+1681502366033:HeartRate = read.csv("HeartRateOxygCons.csv", header = TRUE)
+1681502366451:LinearHeartRate<- lm(Ox ~ HR, data= HeartRate)
+1681502367208:predict(LinearHeartRate, interval="prediction", se.fit=F,
+1681502367208:newdata=data.frame(x=value),level=0.95)
+1681502398520:predict(LinearHeartRate, interval="prediction", se.fit=F,
+1681502398521:newdata=data.frame(Ox=70),level=0.95)
+1681502404301:predict(LinearHeartRate, interval="prediction", se.fit=F,
+1681502404301:newdata=data.frame(Ox=70),level=0.95)
+1681502433506:HeartRate = read.csv("HeartRateOxygCons.csv", header = TRUE)
+1681502434202:LinearHeartRate<- lm(Ox ~ HR, data= HeartRate)
+1681502435140:predict(LinearHeartRate, interval="prediction", se.fit=F,
+1681502435141:newdata=data.frame(Ox=70),level=0.95)
+1681502566706:predict(LinearHeartRate, interval="prediction", se.fit=F,
+1681502566707:newdata=data.frame(Ox=70),level=0.95)
+1681502597613:predict(LinearHeartRate, interval="prediction", se.fit=F,
+1681502597613:newdata=data.frame(HR=70),level=0.95)
+1681950747215:ex <- read.csv("Cars", header = T)
+1681950752731:Cars <- read.csv("Cars", header = T)
+1681950780513:Cars <- read.csv("Cars.csv", header = T)
+1681950789427:setwd("~/Desktop/Stat 319")
+1681950793297:Cars <- read.csv("Cars.csv", header = T)
+1681950802968:RunsTest(Cars$speed)
+1681950827773:library(DescTools)
+1681950830355:RunsTest(Cars$speed)
+1681951096771:RunsTest(Cars$speed, na.rm = T) # na.rm to ignore missing NA values
+1681953088896:NumSulfur <- read.csv("SulfurOxide.csv", header =T)
+1681953705802:SignTest(NumSulfur$sulfur, mu = 22.5, alternative = "lesser", conf.level = 0.95)
+1681953713202:SignTest(NumSulfur$sulfur, mu = 22.5, alternative = "less", conf.level = 0.95)
+1681953725992:SignTest(NumSulfur$sulfur, mu = 22.5, alternative = "greater", conf.level = 0.95)
+1681953741314:SignTest(NumSulfur$sulfur, mu = 22.5, alternative = "less", conf.level = 0.95)
+1682082303135:setwd("~/Desktop/Stat 319")
+1682082310234:library(DescTools)
+1682082331350:SignTest(NumSulfur$sulfur, mu = 22.5, alternative = "less", conf.level = 0.95)
+1682082336405:NumSulfur <- read.csv("SulfurOxide.csv", header =T)
+1682082336786:SignTest(NumSulfur$sulfur, mu = 22.5, alternative = "less", conf.level = 0.95)
+1682082506445:SignTest(NumSulfur$sulfur, mu = 22.5, alternative = "greater", conf.level = 0.95)
+1682082575231:FlareBurnTime <- read.csv("Flares.csv", header =T)
+1682083100092:wilcox.test(made ~ time, data = FlareBurnTime, conf.int = T,
+1682083100092:conf.level = 0.90)
+1682083107858:wilcox.test(made ~ brand, data = FlareBurnTime, conf.int = T,
+1682083107858:conf.level = 0.90)
+1682083113391:FlareBurnTime <- read.csv("Flares.csv", header =T)
+1682083141704:wilcox.test(made ~ brand, data = FlareBurnTime, conf.int = T,
+1682083141704:conf.level = 0.90)
+1682083155722:Cars <- read.csv("Cars.csv", header = T)
+1682083164484:FlareBurnTime <- read.csv("Flares.csv", header =T)
+1682083164862:wilcox.test(time ~ brand, data = FlareBurnTime, conf.int = T,
+1682083164863:conf.level = 0.90)
+1682083175452:wilcox.test(brand ~ time, data = FlareBurnTime, conf.int = T,
+1682083175453:conf.level = 0.90)
+1682084522710:SignTest(NumSulfur$sulfur, mu = 22.5, alternative = "less", conf.level = 0.95)
+1682084559687:NumSulfur <- read.csv("SulfurOxide.csv", header =T)
+1682084560101:SignTest(NumSulfur$sulfur, mu = 22.5, alternative = "less", conf.level = 0.95)
+1682092305088:FlareBurnTime <- read.csv("Flares.csv", header =T)
+1682092305388:wilcox.test(time ~ brand, data = FlareBurnTime, conf.int = T,
+1682092305389:conf.level = 0.90)
+1682092398929:View(FlareBurnTime)

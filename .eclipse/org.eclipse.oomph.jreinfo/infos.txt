@@ -1,0 +1,2 @@
+/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home:21:0:0:64:true:1691613595000:aarch64
+/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home:1:8:0:64:false:1686752154000:x86_64

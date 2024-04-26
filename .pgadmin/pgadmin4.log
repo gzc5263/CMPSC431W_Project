@@ -1,0 +1,60 @@
+2024-04-25 18:10:03,009: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7893920(Query-id: 208582):
+Error Message:ERROR:  syntax error at or near "location_name"
+LINE 2: SELECT unique location_name from public."Location"
+                      ^ 
+
+SQL state: 42601
+Character: 16
+2024-04-25 18:27:38,152: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6686967(Query-id: 5835985):
+Error Message:ERROR:  syntax error at or near "public"
+LINE 3:  JOIN public."Filmed_At" f ON c.title = f.film_title 
+              ^ 
+
+SQL state: 42601
+Character: 95
+2024-04-25 18:28:01,967: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6686967(Query-id: 456623):
+Error Message:ERROR:  syntax error at or near "Filmed_At"
+LINE 3:  JOIN Filmed_At f ON c.title = f.film_title 
+              ^ 
+
+SQL state: 42601
+Character: 95
+2024-04-25 18:31:57,012: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6686967(Query-id: 3432261):
+Error Message:ERROR:  syntax error at or near "sortOrder"
+LINE 1: SELECT * FROM public."Content" ORDER BY title sortOrder;
+                                                      ^ 
+
+SQL state: 42601
+Character: 47
+2024-04-25 18:40:00,447: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6686967(Query-id: 2183502):
+Error Message:ERROR:  syntax error at or near ""SELECT l.location_name, COUNT(*) AS num_works
+FROM public.""
+LINE 1: "SELECT l.location_name, COUNT(*) AS num_works
+        ^ 
+
+SQL state: 42601
+Character: 1
+2024-04-25 18:40:03,893: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:6686967(Query-id: 328910):
+Error Message:ERROR:  syntax error at or near ""SELECT l.location_name, COUNT(*) AS num_works
+FROM public.""
+LINE 1: "SELECT l.location_name, COUNT(*) AS num_works
+        ^ 
+
+SQL state: 42601
+Character: 1
+2024-04-25 18:52:01,264: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:5324730(Query-id: 7077947):
+Error Message:ERROR:  syntax error at or near "*"
+LINE 1: delete * FROM public."Filmed_At" where film_title = 'Life of...
+               ^ 
+
+SQL state: 42601
+Character: 8
+2024-04-25 19:03:55,046: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:3328815(Query-id: 9410295):
+Error Message:ERROR:  syntax error at or near "00"
+LINE 3: 00
+        ^ 
+
+SQL state: 42601
+Character: 62
+2024-04-25 21:55:00,893: WARNING	pgadmin:	Connection to database server (#1) for the connection - 'CONN:3328815' has been lost.
+2024-04-25 21:55:00,894: ERROR	pgadmin:	Connection (id #3328815) lost for the server (#1) on database (Netflix)
