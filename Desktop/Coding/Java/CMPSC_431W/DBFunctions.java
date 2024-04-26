@@ -103,7 +103,7 @@ public class DBFunctions {
             deleteDirectedByStatement.setString(1, title);
             deleteDirectedByStatement.executeUpdate();
     
-            String deleteFilmedAtQuery = "DELETE FROM public.\"Filmed_At\" WHERE film_location = ?";
+            String deleteFilmedAtQuery = "DELETE FROM public.\"Filmed_At\" WHERE film_title = ?";
             PreparedStatement deleteFilmedAtStatement = connection.prepareStatement(deleteFilmedAtQuery);
             deleteFilmedAtStatement.setString(1, title);
             deleteFilmedAtStatement.executeUpdate();
